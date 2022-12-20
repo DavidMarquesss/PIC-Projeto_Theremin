@@ -1,4 +1,4 @@
-//#include <pitches.h>
+
 #include <toneAC.h>
 #include <Ultrasonic.h>
 
@@ -14,18 +14,18 @@ void setup() {
 
 void loop() 
 {
-  delay(30);                    // Wait 30ms between pings (about 33 pings/sec). 29ms should be the shortest delay between pings.
-  distancia = ultrasonic.read(); //reads the distance from the sensor
-  if(distancia < 120 )             //range is about 120 cm
+  delay(30);                    
+  distancia = ultrasonic.read(); 
+  if(distancia < 120 )             
   {
-    int freq= 1500-distancia*10;   //calculates a corresponding freqeuncy
-    toneAC(freq, speaker);    //plays the sound!(output through speaker- pin10)
+    int freq= 1500-distancia*10;   
+    toneAC(freq, speaker);    
     
-    Serial.println(distancia);     //just for monitoring if required
+    Serial.println(distancia);     
   }
   else
   {
-   noToneAC();  //out of range 
+   noToneAC();   
   }
 
 }

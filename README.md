@@ -13,7 +13,13 @@
 - 1x Speaker 0.5w 8Ω
 - Protoboard
 - Alimentação (Usado no projeto uma bateria 9V)
+
 ### Esquemático
+![a](https://github.com/DavidMarquesss/PIC-Projeto_Theremin/blob/main/Amazing%20Tumelo.png)
+<p>Obs.: No esquemático a seguir foi utilizado um Buzzer para demostrar o speaker, possuindo a mesma pinagem</p>
+
+##Código
+
 
 
 

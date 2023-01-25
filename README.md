@@ -5,6 +5,9 @@
 
 <p>Por meio da biblioteca Ultrasonic.h é usada a função que por meio dos pinos de trigger e echo conectados ao circuito, é retornado uma distancia em centímetros.Esse distancia é utilizada para calcular uma frequencia por meio da fórmula <b>Frequência = 1500 - (distância * 10)</b>. Esse valor de frequência calculado em seguida, usando a biblioteca toneAC, é passado a frequência a ser aplicada e escutada pelo speaker. O controle de volume é realizado por um potenciômetro conectado ao positivo do speaker.</p>
 
+<p>Pensando em um compartimento para armazenar os componentes e fios do projeto, planejamos a construção de uma caixa. Utilizando a Matemateca do Departamento de Matemática da UFES, que consiste em um laboratório de pesquisas na área de marcenaria e eletrônica, conseguimos planejar melhor um esquema da caixa e utilizando o maquinário do laboratório conseguimos realizar sua construção e melhoramento da estética proposta inicialmente.</p>
+
+
 ## Componentes
 - 1x Sensor Ultrassônico
 - 1x Potenciômetro

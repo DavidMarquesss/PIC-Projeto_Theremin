@@ -49,8 +49,8 @@ void loop() {
   digitalWrite(trigger, HIGH);            // Enviando pulso de 10 microsegundos
   delayMicroseconds(10);                        
   digitalWrite(trigger, LOW);                   
-  tempoRespuesta = pulseIn(echo, HIGH);  // esperamos retorno do pulso
-  distancia = tiempoRespuesta/58;         // Cálculo de distancia em cm
+  tempoResposta = pulseIn(echo, HIGH);  // esperamos retorno do pulso
+  distancia = tempoResposta/58;         // Cálculo de distancia em cm
   
   if (distancia >= limiteInferior && distancia <= limiteSuperior) {
     int x=map(distancia,limiteInferior,limiteSuperior,0,((quantidadeNotas-1)*10));

@@ -3,7 +3,7 @@
 
 <p>Projeto que consiste em um instrumento theremin usando um sensor ultrassônico, no qual um auto-falante emite frequências sonoras diferentes em relação a proximidade com o sensor ultrassônico utilizado num raio de 120 cm e controle do volume do alto-falante feito por um potenciômetro.</p>
 
-<p>Usando um arquivo ".h" público de frequências para a definição de notas a serem usadas no código principal, é definido primeiramente os os pins de echo e trigger do sensor ultrassônico, em seguido do speaker. Em seguida, é enivado o pulso pelo sensor e captado em seguida. Como foi definido limite minimo de captação da distancia em 5cm e máximo de 80cm, caso seja detectado algo nesse intervalo, é mapeado um valor x, que é dividido por 10 para ser liberado o som no speaker.</p>
+<p>Usando um arquivo ".h" público de frequências para a definição de notas a serem usadas no código principal, é definido primeiramente os os pins de echo e trigger do sensor ultrassônico, em seguido do speaker. Em seguida, é enviado o pulso pelo sensor e captado em seguida. Como foi definido limite minimo de captação da distancia em 5cm e máximo de 80cm, caso seja detectado algo nesse intervalo, é mapeado um valor x, que é dividido por 10 para ser liberado o som no speaker.</p>
 
 <p>Pensando em um compartimento para armazenar os componentes e fios do projeto, planejamos a construção de uma caixa. Utilizando a Matemateca do Departamento de Matemática da UFES, que consiste em um laboratório de pesquisas na área de marcenaria e eletrônica, conseguimos planejar melhor um esquema da caixa e utilizando o maquinário do laboratório conseguimos realizar sua construção e melhoramento da estética proposta inicialmente.</p>
 

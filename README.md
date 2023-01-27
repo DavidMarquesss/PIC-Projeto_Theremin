@@ -7,8 +7,10 @@
 
 <p>Pensando em um compartimento para armazenar os componentes e fios do projeto, planejamos a construção de uma caixa. Utilizando a Matemateca do Departamento de Matemática da UFES, que consiste em um laboratório de pesquisas na área de marcenaria e eletrônica, conseguimos planejar melhor um esquema da caixa e utilizando o maquinário do laboratório conseguimos realizar sua construção e melhoramento da estética proposta inicialmente.</p>
 
+![b](https://github.com/DavidMarquesss/PIC-Projeto_Theremin/blob/4e19e4be6bdf4ed03156b0cc7725003e6e41cf93/caixa_matemateca.jpg)
+<p>Resultado final da caixa do projeto</p>
 
-## Componentes
+### Componentes
 - 1x Sensor Ultrassônico
 - 1x Potenciômetro
 - Jumpers
@@ -36,9 +38,10 @@ int limiteInferior = 5;
 int limiteSuperior = 80;
 int quantidadeNotas = 12;
 
-int notas[]={NOTE_C4,NOTE_CS4,NOTE_D4,NOTE_DS4,NOTE_E4,NOTE_F4,NOTE_FS4,NOTE_G4,NOTE_GS4,NOTE_A4,NOTE_AS4,NOTE_B4,NOTE_C5}; //Escala cromatica
+int notas[]={NOTE_C4,NOTE_CS4,NOTE_D4,NOTE_DS4,NOTE_E4,NOTE_F4,NOTE_FS4,NOTE_G4,NOTE_GS4,NOTE_A4,NOTE_AS4,NOTE_B4,NOTE_C5}; //Escala cromatica (escala de notas selecionadas do frequencias.h)
 
 void setup() {
+//definição dos pinos
   pinMode(speaker, OUTPUT);                  
   pinMode(trigger, OUTPUT);                     
   pinMode(echo, INPUT);   
@@ -53,6 +56,7 @@ void loop() {
   distancia = tempoResposta/58;         // Cálculo de distancia em cm
   
   if (distancia >= limiteInferior && distancia <= limiteSuperior) {
+  //mapeamento da distancia para o tom correto a ser reproduzido no speaker
     int x=map(distancia,limiteInferior,limiteSuperior,0,((quantidadeNotas-1)*10));
     tone(speaker, notas[x/10]);
     delay(100);
